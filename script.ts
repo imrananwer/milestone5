@@ -16,20 +16,20 @@ form.addEventListener('submit', (event: Event) => {
 
     // Generate the resume content dynamically
     const resumeHTML = `
-    <h2><b>Resume</b></h2>
+    <h2><b>Editable Resume</b></h2>
     <h3>Personal Information</h3>
-    <p><b>Name:</b>${name}</p>
-    <p><b>Email:</b>${email}</p>
-    <p><b>Phone:</b>${phone}</p>
+    <p><b>Name:</b><span contentediable="true">${name}</span></p>
+    <p><b>Email:</b><span contentediable="true">${email}</span></p>
+    <p><b>Phone:</b><span contentediable="true">${phone}</span></p>
 
     <h3>Education</h3>
-    <p>${education}</p>
+    <p contentediable="true">${education}</p>
 
     <h3>Experience</h3>
-    <p>${experience}</p>
+    <p contentediable="true">${experience}</p>
 
     <h3>Skills</h3>
-    <p>${skills}</p>
+    <p contentediable="true">${skills}</p>
     `;
 
     // Display the generated resume
